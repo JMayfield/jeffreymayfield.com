@@ -1,0 +1,123 @@
+<!doctype html>
+
+<!--
+ _____             ___    ___
+/\___ \          /'___\ /'___\
+\/__/\ \     __ /\ \__//\ \__/  _ __    __   __  __
+   _\ \ \  /'__`\ \ ,__\ \ ,__\/\`'__\/'__`\/\ \/\ \
+  /\ \_\ \/\  __/\ \ \_/\ \ \_/\ \ \//\  __/\ \ \_\ \
+  \ \____/\ \____\\ \_\  \ \_\  \ \_\\ \____\\/`____ \
+   \/___/  \/____/ \/_/   \/_/   \/_/ \/____/ `/___/> \
+                                                 /\___/
+                                                 \/__/
+                              ___             ___       __
+ /'\_/`\                    /'___\ __        /\_ \     /\ \
+/\      \     __     __  __/\ \__//\_\     __\//\ \    \_\ \
+\ \ \__\ \  /'__`\  /\ \/\ \ \ ,__\/\ \  /'__`\\ \ \   /'_` \
+ \ \ \_/\ \/\ \L\.\_\ \ \_\ \ \ \_/\ \ \/\  __/ \_\ \_/\ \L\ \
+  \ \_\\ \_\ \__/.\_\\/`____ \ \_\  \ \_\ \____\/\____\ \___,_\
+   \/_/ \/_/\/__/\/_/ `/___/> \/_/   \/_/\/____/\/____/\/__,_ /
+                         /\___/
+                         \/__/
+  __          __
+ /\ \        /\ \__
+ \_\ \    ___\ \ ,_\        ___    ___     ___ ___
+ /'_` \  / __`\ \ \/       /'___\ / __`\ /' __` __`\
+/\ \L\ \/\ \L\ \ \ \_     /\ \__//\ \L\ \/\ \/\ \/\ \
+\ \___,_\ \____/\ \__\    \ \____\ \____/\ \_\ \_\ \_\
+ \/__,_ /\/___/  \/__/     \/____/\/___/  \/_/\/_/\/_/
+
+ -->
+
+<html lang="en" class="home">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Jeffrey Mayfield - Web developer. Enthusiasm enthusiast.</title>
+        <meta name="description" content="Web developer. Enthusiasm enthusiast.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#f1f1f1">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+        <meta name="theme-color" content="#03a9f4">
+    </head>
+
+    <body>
+
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-24150473-1', 'auto');
+            ga('require', 'linkid', 'linkid.js');
+            ga('send', 'pageview');
+        </script>
+
+        <div>
+
+            <header class="top">
+                <h1>Jeffrey Mayfield</h1>
+                <h2 class="bio"><span>Web developer. </span><span>Enthusiasm enthusiast.</span></h2>
+            </header>
+
+            <ul class="services">
+                <li class="service twitter">
+                    <a href="http://twitter.com/JeffreyMayfield" title="Twitter" id="gaLinkTwitter">Twitter</a>
+                </li>
+                <li class="service github">
+                    <a href="http://github.com/jmayfield" title="Github" id="gaLinkGithub">Github</a>
+                </li>
+                <li class="service dribbble">
+                    <a href="http://dribbble.com/Mayfield" title="Dribbble" id="gaLinkDribbble">Dribbble</a>
+                </li>
+                <li class="service linkedin">
+                    <a href="http://www.linkedin.com/in/jeffreymayfield" title="LinkedIn" id="gaLinkLinkedin">LinkedIn</a>
+                </li>
+                <li class="service blog">
+                    <a href="http://tragicbliss.com/" title="Blog" id="gaLinkBlog">Blog</a>
+                </li>
+                <li class="service email">
+                    <a href="mailto:info@jeffreymayfield.com" title="Email" id="gaLinkEmail">Email</a>
+                </li>
+            </ul>
+    </div>
+
+    <script>
+        var services = document.getElementsByClassName('service'),
+            len = services.length;
+
+        while(len--) {
+            var me = services[len];
+
+            me.addEventListener('mouseover', function(event) {
+                document.body.className = this.className.replace('service ', '');
+            }, false);
+        }
+    </script>
+
+    </body>
+</html>
