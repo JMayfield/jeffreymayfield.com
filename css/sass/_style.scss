@@ -1,17 +1,17 @@
 // SASS Vendor Imports
 // _____________________________________________________________________________
 
-// Bourbon
+// Bourbon v4.2.7
 // http://bourbon.io/
 @import "bourbon/bourbon";
 
-// Normalize
+// Normalize v4.1.1
 // https://necolas.github.io/normalize.css/
 @import "normalize/normalize";
 
-// Bitters
+// Bitters v1.3.2
 // http://bourbon.io/
-@import "base/base";
+@import "bitters/base";
 
 
 // Basic Styles
@@ -19,7 +19,7 @@
 
 // Text Selection
 @include selection {
-  background: rgba(0,0,0,.1);
+    background: rgba(0,0,0,.1);
 }
 
 
@@ -27,28 +27,40 @@
 // _____________________________________________________________________________
 
 .home {
-
     body {
+        $em-base: 24px;
         @include transition(background .5s ease-out);
         @include clearfix;
-        $em-base: 24px;
-        font: 300 24px/29px "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+        margin: 150px 20%;
         background: #4caf50;
         color: #fff;
-        margin: 150px 20%;
+        font: 300 24px/29px "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 
-        &.twitter    { background: #03a9f4; }
-        &.github     { background: #607d8b; }
-        &.dribbble   { background: #f06292; }
-        &.linkedin   { background: #1e88e5; }
-        &.blog       { background: #4caf50; }
-        &.email      { background: #ef5350; }
+        &.twitter {
+            background: #03a9f4;
+        }
+        &.github {
+            background: #607d8b;
+        }
+        &.dribbble {
+            background: #f06292;
+        }
+        &.linkedin {
+            background: #1e88e5;
+        }
+        &.blog {
+            background: #4caf50;
+        }
+        &.email {
+            background: #ef5350;
+        }
     }
 
-    h1, h2 {
+    h1,
+    h2 {
+        font-weight: 300;
         font-size: 1.8em;
         line-height: 1.25em;
-        font-weight: 300;
     }
 
     h1 {
@@ -56,20 +68,20 @@
     }
 
     .services {
-        list-style: none;
         padding-top: 2.5em;
+        list-style: none;
 
         li {
             float: left;
 
             a {
                 @include transition(opacity .5s ease-out);
-                color: #fff;
-                font-size: 1.2em;
-                text-decoration: none;
                 display: inline-block;
                 padding-right: 30px;
                 padding-bottom: 15px;
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.2em;
                 opacity: .5;
 
                 &:hover {
@@ -85,33 +97,33 @@
 // _____________________________________________________________________________
 
 .error {
-    color: #f1f1f1;
     display: table;
-    height: 100%;
-    text-align: center;
     width: 100%;
+    height: 100%;
+    color: #f1f1f1;
+    text-align: center;
 
     * {
-        line-height: 1.2;
         margin: 0;
+        line-height: 1.2;
     }
 
     body {
-        font: 300 24px/29px "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
         display: table-cell;
-        vertical-align: middle;
         margin: 2em auto;
+        background-image: url("../img/404.gif");
         background-attachment: fixed;
-        background-image: url('../img/404.gif');
         background-position: 50% 50%;
         background-size: cover;
+        vertical-align: middle;
+        font: 300 24px/29px "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     }
 
     h1 {
-        color: #ffffff;
-        font-size: 1.8em;
+        margin-bottom: 1em;
+        color: #fff;
         font-weight: 300;
-            margin-bottom: 1em;
+        font-size: 1.8em;
     }
 
     p {
@@ -127,66 +139,52 @@
 // _____________________________________________________________________________
 
 @media only screen and (max-width: 1250px) {
-
     .home {
-
         body {
             margin: 15% 15%;
         }
     }
-
 }
 
 @media only screen and (max-width: 1050px) {
-
     .home {
-
         body {
             margin: 10% 10%;
         }
     }
-
 }
 
 @media only screen and (max-width: 925px) {
-
     .home {
-
         h2 span {
             display: block;
         }
     }
-
 }
 
 @media only screen and (max-width: 875px) {
-
     .home {
-
         .services {
-            padding-top: 0.5em;
+            padding-top: .5em;
 
             li {
                 display: block;
+                padding-bottom: .8em;
                 width: 33%;
-                padding-bottom: 0.8em;
             }
         }
     }
-
 }
 
 @media only screen and (max-width: 480px) {
-
     .home {
-
         body {
             margin: 10% 10%;
             background: #03a9f4;
         }
 
         .services {
-            padding-top: 0.5em;
+            padding-top: .5em;
 
             li {
                 display: block;
@@ -201,14 +199,14 @@
     }
 
     .error {
-
-        body, p {
+        body,
+        p {
             width: 80%;
         }
 
         h1 {
+            margin: 0 0 .3em;
             font-size: 1.5em;
-            margin: 0 0 0.3em;
         }
 
         p {
