@@ -12,4 +12,8 @@ Location: Los Angeles, California, United States of America
 Last update: 2016/07/17
 Standards: HTML5, CSS3
 Components: SASS, Bourbon.io, Normalize.css
+<<<<<<< HEAD
 Software: OSX, Atom, CodeKit, Tower
+=======
+Software: Software used for the development
+>>>>>>> ef207868ce551d3258a876e84351ceacc1c2eb9e
