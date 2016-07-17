@@ -1,11 +1,15 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+/* TEAM */
 
-# TEAM
+Owner, Developer: Jeff Mayfield
+Twitter: @JeffreyMayfield
+Github: JMayfield
+LinkedIn: jeffreymayfield
+Location: Los Angeles, California, United States of America
 
-    Jeffrey Mayfield -- Developer -- @JeffreyMayfield
 
-# TECHNOLOGY COLOPHON
+/* SITE */
 
-    CSS3, HTML5
-    Normalize.css, SASS, CodeKit, Atom
+Last update: 2016/07/17
+Standards: HTML5, CSS3
+Components: SASS, Bourbon.io, Normalize.css
+Software: OSX, Atom, CodeKit, Tower
